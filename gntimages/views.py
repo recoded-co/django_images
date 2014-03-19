@@ -141,7 +141,7 @@ def place_marker(request):
     cache_resp = cache.get(cache_id)
     if cache_resp:
         return cache_resp
-    response = render_to_response('place_marker.svg',
+    response = render_to_response('licznazielen.svg',
                               {'color': '#%s' % color,
                                'scale': scale},
                               mimetype = 'image/svg+xml')
