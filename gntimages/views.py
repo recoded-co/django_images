@@ -164,8 +164,7 @@ def route_marker(request):
 def area_marker(request):
     color = request.GET.get('color', 'ffffff')
     scale = request.GET.get('scale', 1)
-    
-    return render_to_response('area_marker.svg',
+    return render_to_response('licznazielen-area.svg',
                               {'color': '#%s' % color,
                                'scale': scale},
                               mimetype = 'image/svg+xml')
